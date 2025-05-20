@@ -1,0 +1,16 @@
+FROM pwn.red/jail
+
+COPY --from=ubuntu:latest /bin/sh /srv/bin/sh
+COPY --from=ubuntu:latest /lib/x86_64-linux-gnu/ /srv/lib/x86_64-linux-gnu/
+COPY --from=ubuntu:latest /lib64/ /srv/lib64/
+
+COPY --from=ubuntu:latest /bin/ls /srv/bin/ls
+COPY --from=ubuntu:latest /usr/bin/id /srv/usr/bin/id
+COPY --from=ubuntu:latest /bin/cat /srv/bin/cat
+
+ENV JAIL_TIME=60
+
+COPY ret2lose /srv/app/run
+COPY flag.txt /srv/app/flag.txt
+
+RUN chmod 555 /srv/app/run && chmod 444 /srv/app/flag.txt
