@@ -1,0 +1,38 @@
+body {
+  background-color: #1a1a1a;
+  color: #f8f8f2;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ffd700; /* Golden color for an Elden Ring vibe */
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+a {
+  color: #ff4500;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  background-color: #ff4500;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ff6347;
+}

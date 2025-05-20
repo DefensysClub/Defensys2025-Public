@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+/* KEY_BASE: supersecretkey */
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.premium-image {
+    width: 200px;
+    margin-bottom: 20px;
+}
+

@@ -1,0 +1,19 @@
+FROM pwn.red/jail
+
+COPY --from=ubuntu:22.04 /bin/sh /srv/bin/sh
+COPY --from=ubuntu:22.04 /lib/x86_64-linux-gnu/ /srv/lib/x86_64-linux-gnu/
+COPY --from=ubuntu:22.04 /lib64/ /srv/lib64/
+
+COPY --from=ubuntu:22.04 /bin/ls /srv/bin/ls
+COPY --from=ubuntu:22.04 /usr/bin/id /srv/usr/bin/id
+COPY --from=ubuntu:22.04 /bin/cat /srv/bin/cat
+
+ENV JAIL_TIME=60
+
+COPY chall2 /srv/app/run
+COPY flag.txt /srv/app/flag.txt
+
+COPY libs /srv/app/libs
+
+RUN chmod 555 /srv/app/run && chmod 444 /srv/app/flag.txt
+

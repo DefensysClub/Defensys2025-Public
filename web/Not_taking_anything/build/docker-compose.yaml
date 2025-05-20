@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  app:
+    build: app
+    ports:
+      - 5003:8081
+    networks:
+      - internal
+    depends_on:
+      - bot
+  bot:
+    build: bot
+    ports:
+      - 3001:3001
+    environment:
+      APPNAME: Admin Bot
+      APPFLAG: defensys{dompurify_for_the_WIN_432142312341}
+      APPLIMIT: 2
+      APPLIMITTIME: 60
+      USE_PROXY: 1
+    networks:
+      - internal
+
+networks:
+  internal:

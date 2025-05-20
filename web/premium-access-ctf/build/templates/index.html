@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Premium Service</title>
+</head>
+<body>
+    <div class="subscription-container">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo">
+        <h1>Welcome to Our Premium Service</h1>
+        <p>We offer various services, including our exclusive,check our  <a href="/premium">Premium Service</a>.</p>
+        <p>Enter your serial number below to activate premium access.</p>
+        
+        <form action="/verify" method="POST" class="subscription-form">
+            <input type="text" name="serial_code" placeholder="Enter Serial Number" required>
+            <button type="submit">Activate</button>
+        </form>
+        
+        <p class="error-message">Incorrect serial number. Please try again.</p>
+        
+        
+        
+        <div class="review-input">
+            <h2>Leave a Review</h2>
+            <textarea name="review" placeholder="Write your review here..."></textarea>
+            <button type="submit">Submit Review</button>
+        </div>
+    </div>
+</body>
+</html>
+

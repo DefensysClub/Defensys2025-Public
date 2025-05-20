@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form with Dynamic Input Fields</title>
+    <script>
+        function updateInputName(selectBox, inputField) {
+            var selectedKey = selectBox.options[selectBox.selectedIndex].value;
+            inputField.name = selectedKey;
+        }
+
+        function addInputField() {
+            var container = document.getElementById("input_fields_container");
+
+            var selectBox = document.createElement("select");
+            selectBox.required = true;
+            selectBox.onchange = function() {
+                updateInputName(selectBox, newInput);
+            };
+
+            var option1 = document.createElement("option");
+            option1.value = "name";
+            option1.text = "Name";
+            selectBox.appendChild(option1);
+
+            var option2 = document.createElement("option");
+            option2.value = "description";
+            option2.text = "Description";
+            selectBox.appendChild(option2);
+
+            var newInput = document.createElement("input");
+            newInput.type = "text";
+            newInput.name = selectBox.value;
+            newInput.required = true;
+
+            var lineBreak = document.createElement("br");
+
+            container.appendChild(selectBox);
+            container.appendChild(newInput);
+            container.appendChild(lineBreak);
+        }
+
+        function removeSelectNames() {
+            var selectElements = document.querySelectorAll("select");
+            selectElements.forEach(function(select) {
+                select.removeAttribute("name");
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Submit Your Data</h1>
+    <form action="{% url 'search' %}" method="get" onsubmit="removeSelectNames()">
+        <label for="key_choice"></label>
+        <select id="key_choice" onchange="updateInputName(this, document.getElementById('input_value'))" required>
+            <option value="name">Name</option>
+            <option value="description">Description</option>
+            
+        </select>
+        
+        <div id="input_fields_container">
+            <label for="input_value"></label>
+            <input type="text" id="input_value" name="name" required>
+            <br><br>
+        </div>
+        <br><br>
+        <button type="button" onclick="addInputField()">Add Another Input Field</button>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

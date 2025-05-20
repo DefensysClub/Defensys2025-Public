@@ -1,0 +1,9 @@
+1. Quelle est l'adresse IP de la machine infectée ?
+
+2. Quel est le nom de domaine principal impliqué dans ce trafic ?
+
+3. Quelle est l’adresse IP du serveur C2 suspecté ?
+
+4. Quelle requête DNS a retourné une réponse “No Such Name” ?
+
+5. Quelle est l'adresse MAC de la passerelle réseau détectée ?

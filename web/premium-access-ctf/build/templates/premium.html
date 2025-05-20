@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function d3c0d3(str) {
+            return decodeURIComponent(escape(window.atob(str)));
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            let flag = "ZGVmZW5zeXN7cHJlbWl1bV9hY2Nlc3NfZ3JhbnRlZF85NDMyNDEyMzE0fQo=";
+            document.getElementById("fl4g").innerText = d3c0d3(flag);
+        });
+    </script>
+    <style>
+        .hidden { display: none; }
+    </style>
+    <title>Exclusive Area</title>
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/premium.png') }}" alt="Exclusive" class="premium-image">
+        <h1>Welcome to the Exclusive Area!</h1>
+        <p id="fl4g" class="hidden"></p>
+    </div>
+</body>
+</html>

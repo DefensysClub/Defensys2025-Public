@@ -1,0 +1,9 @@
+6. Quel est l’ID de transaction de la première requête Kerberos ?**
+
+7. Quel est le port utilisé pour les tentatives de connexion aux partages réseau SMB ?**
+
+8. Quelle est la commande SMB utilisée pour négocier une connexion ? (des mots séparés par -)
+
+9. Quel est le premier message d’erreur retourné par le serveur Kerberos ?**
+
+10. Quelle adresse IP semble être un serveur contrôleur de domaine ?**

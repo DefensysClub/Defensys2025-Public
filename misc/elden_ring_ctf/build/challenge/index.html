@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lands Between</title>
+  <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+  <style>
+    /* Background Image */
+    body {
+      background: url('/static/images/eldenring_bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Georgia', serif;
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Main Heading */
+    h1 {
+      font-size: 3rem;
+      margin-top: 50px;
+      text-shadow: 3px 3px 5px black;
+      color: #ffcc00;
+    }
+
+    /* Subtext */
+    p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+    }
+
+    /* Kingdom Links */
+    .kingdoms {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .kingdoms li {
+      margin: 15px 0;
+    }
+
+    .kingdom-link {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      background: linear-gradient(45deg, #8b0000, #ff4500);
+      border-radius: 10px;
+      transition: 0.3s;
+      border: 2px solid white;
+      box-shadow: 3px 3px 10px black;
+    }
+
+    .kingdom-link:hover {
+      background: linear-gradient(45deg, #ff4500, #8b0000);
+      transform: scale(1.1);
+    }
+
+    /* Flag Format */
+    .flag-format {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #ffcc00;
+      background: rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: 2px solid white;
+      box-shadow: 3px 3px 10px black;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 50px;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.7);
+      font-size: 1rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px black;
+    }
+  </style>
+</head>
+<body>
+  <h1>The Lands Between</h1>
+  <p>The Flag of Grace has been shattered. The Tarnished must recover its pieces to restore balance to the Lands Between.</p>
+
+  <h2>Kingdoms</h2>
+  <ul class="kingdoms">
+    <li><a href="/kingdom_malenia/boss.php" class="kingdom-link">⚔ Malenia's Kingdom</a></li>
+    <li><a href="/kingdom_radahn/battle.php" class="kingdom-link">🛡 Radahn's Kingdom</a></li>
+    <li><a href="/kingdom_godrick/token.php" class="kingdom-link">👑 Godrick's Kingdom</a></li>
+  </ul>
+
+  <div class="flag-format">⚠ Flag Format: defensys{pass1_pass2_pass3} ⚠</div>
+
+  <footer>
+    <p>Made by Napoli1372</p>
+  </footer>
+</body>
+</html>
+

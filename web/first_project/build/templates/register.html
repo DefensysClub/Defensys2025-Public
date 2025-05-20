@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+</head>
+<body>
+    <h1>Create an Account</h1>
+    <form method="POST" action="/register">
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="ex.: John" required><br><br>
+
+        <label for="last_name">Last name:</label>
+        <input type="text" name="last_name" placeholder="ex.: Doe" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" placeholder="ex.: 25" required><br><br>
+
+        <label for="city">City:</label>
+        <input type="text" name="city" placeholder="ex.: New York" required><br><br>
+
+        <label for="country">Country:</label>
+        <input type="text" name="country" placeholder="ex.: USA" required><br><br>
+
+        <label for="job">Job:</label>
+        <input type="text" name="job" placeholder="ex.: Engineer" required><br><br>
+
+        <label for="hobby">Hobby:</label>
+        <input type="text" name="hobby" placeholder="ex.: Reading" required><br><br>
+
+        <label for="username">Username:</label>
+        <input type="text" name="username" placeholder="ex.: johndoe25" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="ex.: Nka@l%rRg*Sq25" required><br><br>
+        
+        <h4>Important note :</h4>
+        <h4>The password should not consist of personal information; it must be very strong.</h4>
+        <h4>But the username is not an issue.</h4>
+
+        <input type="submit" value="Create Account">
+    </form>
+</body>
+</html>

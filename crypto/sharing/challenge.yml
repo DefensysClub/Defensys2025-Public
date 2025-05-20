@@ -1,0 +1,44 @@
+# Required sections
+name: "sharing"
+author: "WhyDude230"
+category: crypto
+description: Our virtual and decentralised company in the blockchain, is OUR COMPANY, each employee own a part of it so we use  secret sharing to make sure nobody can do anything without our consent all of us, right ? right ?
+
+value: 500
+type: dynamic
+
+extra:
+     initial: 500
+     decay: 100
+     minimum: 50
+
+# ----------- do not touch those -------
+image: null
+protocol: null
+host: null
+connection_info: <ip>:4002
+# --------------------------------------
+
+flags:
+    # A static case sensitive flag
+    - defensys{SSS_1s_4m4z1ng_but_fl1ppings_is_dangerous}
+
+# Tags are used to provide additional public tagging to a challenge
+# Can be removed if unused
+# Accepts strings
+tags:
+    - crypto
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - dist/chall.py
+
+# The state of the challenge.
+# If the field is omitted, the challenge is visible by default.
+# If provided, the field can take one of two values: hidden, visible.
+state: visible
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

@@ -1,0 +1,4 @@
+c30b724f55c36b504ba565a33903249ade460d4c18586594753f3b8cee3778c54e3a14cd52357c22530c9ee2e3824ac4e689cb374939ca0af829610d319fd7ae
+Flag structure: DEFENSYS{Last name_Age_City_Hobby_CyberM48}
+For example, if your informations are: John:Doe:25:New York:USA:Engineer:Reading
+Then the flag would be: DEFENSYS{Doe_25_New York_Reading_CyberM48}

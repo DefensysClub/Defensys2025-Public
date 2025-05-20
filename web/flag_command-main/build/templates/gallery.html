@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cat Gallery</title>
+</head>
+<body>
+    <h1>Cat Gallery</h1>
+    <img src="{{ url_for('static', filename='cat1.jpg') }}" width="300">
+    <img src="{{ url_for('static', filename='cat2.jpg') }}" width="300">
+    <h2>Upload a Cat Picture</h2>
+    <form method="POST">
+        <label for="filename">Enter filename:</label>
+        <input type="text" id="filename" name="filename">
+        <button type="submit">View File</button>
+    </form>
+    <pre>{{ output }}</pre>
+</body>
+</html>

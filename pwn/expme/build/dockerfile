@@ -1,0 +1,17 @@
+FROM debian:bookworm-slim
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends socat && \
+    rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+COPY expme.release .
+RUN chmod +x expme.release
+
+RUN printf '#!/bin/sh\nsocat TCP-LISTEN:1337,reuseaddr,fork EXEC:"/app/expme.release"\n' \
+     > /entrypoint.sh && chmod +x /entrypoint.sh
+
+EXPOSE 1337
+ENTRYPOINT ["/entrypoint.sh"]
+

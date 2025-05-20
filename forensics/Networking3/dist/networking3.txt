@@ -1,0 +1,7 @@
+11. Quel modèle d’attaque MITRE ATT&CK correspond aux tentatives LDAP et SMB dans ce trafic ?**
+
+1️2. Quelle est l’adresse IP externe contactée et comment vérifier si elle est malveillante ?**
+
+1️3️. Quel outil d’IA pourrait être utilisé pour détecter des comportements suspects dans ce PCAP ?**
+
+defensys{T1557.001_194.26.135.119_Zeek}
