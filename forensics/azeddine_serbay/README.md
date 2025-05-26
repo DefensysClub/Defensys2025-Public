@@ -1,13 +1,12 @@
-# Astronauts Driver
+# Azzedine Serbay
 
 **Author**: WhyDude230
 
 **Category**: forensics
 
-**Difficulty**: easy
+**Difficulty**: Hard
 
-**Description**: Astronauts are such a beasts
+**Description**: Azedine serbay again scammed us and took all our money, but we managed to get his laptop to figure out how he did it, unfortunately, he encrypted the files on it. Azzdine is KHATAR wakha gha serbay
 
-**What this challenge is about**: reading the flag from an Object's attribute in bloodhound
 
 
